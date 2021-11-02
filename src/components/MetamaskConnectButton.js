@@ -37,7 +37,7 @@ const MetamaskConnectButton = () => {
       <Text uppercase color="green" t3 lineHeight="40px" className="mx-2">
         Metamask
       </Text>
-      <ConnectBtn onClick={() => activate(injected)}>Connect</ConnectBtn>
+      <ConnectBtn onClick={() => activate(injected, (error) => {console.log("Error: ", error)})}>Connect</ConnectBtn>
     </Card>
   );
 };
